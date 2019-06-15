@@ -1,4 +1,4 @@
-FROM golang:latest as builder
+FROM golang:1.12.6 as builder
 LABEL app="gotbd" by="aberic"
 RUN go get golang.org/x/sys/unix && \
  go get golang.org/x/lint/golint && \
